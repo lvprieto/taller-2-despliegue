@@ -20,6 +20,7 @@ app.config.suppress_callback_exceptions = True
 
 # Comentario para probar funcionamiento de rama: Carga de datos de un archivo CSV
 # Comentario para probar funcionamiento en remoto: Carga de datos de un archivo CSV
+# Comentario añadido por Johan :)
 # Load data from csv
 def load_data():
     df = pd.read_csv('datos_energia.csv')

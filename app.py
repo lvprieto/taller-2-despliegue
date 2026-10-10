@@ -18,14 +18,14 @@ app.title = "Dashboard energia"
 server = app.server
 app.config.suppress_callback_exceptions = True
 
-
+# Comentario para probar funcionamiento de rama: Carga de datos de un archivo CSV
 # Load data from csv
 def load_data():
     df = pd.read_csv('datos_energia.csv')
     df['time'] = pd.to_datetime(df['time'])
     df.set_index('time', inplace=True)
     return df
-    
+
 
 # Cargar datos
 data = load_data()
